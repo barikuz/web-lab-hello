@@ -10,6 +10,7 @@ function App() {
         <p>Yazılım Mühendisliği</p>
         <p>Müzik dinlemeyi severim. Video oyunu oynamayı da.</p>
         <p>Ben Engin. Fırat Üniversitesinde yazılım okuyorum. 22 yaşındayım.</p>
+        <p>Şuan bu yazıyı yazarken saat 00:54</p>
       </div>
   )
 }
