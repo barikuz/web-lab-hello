@@ -1,19 +1,58 @@
-import './App.css'
+import "./App.css";
+import profileFoto from "./assets/profile.jpeg";
 
 function App() {
   return (
-      <div>
-        <h1>Web Tasarimi ve Programlama</h1>
-        <h2>LAB-1</h2>
-        <p>Ad Soyad: Engin Saçan</p>
-        <p>Ogrenci No: 230541039</p>
-        <p>Yazılım Mühendisliği</p>
-        <p>Müzik dinlemeyi severim. Video oyunu oynamayı da.</p>
-        <p>Ben Engin. Fırat Üniversitesinde yazılım okuyorum. 22 yaşındayım.</p>
-        <p>Şuan bu yazıyı yazarken saat 00:54</p>
-        <p>Başım ağrıyor, çok hastayım.</p>
-      </div>
-  )
+    <>
+      <header>
+        <h1>Engin Saçan Kişisel Portfolyo Sitesi</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#hakkimda">Hakkimda</a>
+            </li>
+            <li>
+              <a href="#projeler">Projeler</a>
+            </li>
+            <li>
+              <a href="#iletisim">Iletisim</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="hakkimda">
+          <h2>Hakkimda</h2>
+
+          <figure>
+            <img src={profileFoto} alt="Engin Saçan'ın profil resmi" />
+            <figcaption>Engin Saçan</figcaption>
+          </figure>
+        </section>
+
+        <section id="projeler">
+          <h2>Projelerim</h2>
+          <figure>
+            <img
+              src="/ototechstil.png"
+              alt="Ototechstil Projesi Dashboard Ekranı"
+            />
+            <figcaption>Ototechstil Projesi</figcaption>
+          </figure>
+        </section>
+
+        <section id="iletisim">
+          <h2>Iletisim</h2>
+          {/* Iletisim içeriği buraya gelecek */}
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Engin Saçan. Tum haklari saklidir.</p>
+      </footer>
+    </>
+  );
 }
 
-export default App
+export default App;
