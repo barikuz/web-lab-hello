@@ -4,9 +4,13 @@ import profileFoto from "./assets/profile.jpeg";
 function App() {
   return (
     <>
+      <a href="#main-content" className="skip-link">
+        Ana içeriğe geç
+      </a>
+
       <header>
         <h1>Engin Saçan Kişisel Portfolyo Sitesi</h1>
-        <nav>
+        <nav aria-label="Ana navigasyon">
           <ul>
             <li>
               <a href="#hakkimda">Hakkimda</a>
@@ -21,7 +25,7 @@ function App() {
         </nav>
       </header>
 
-      <main>
+      <main id="main-content">
         <section id="hakkimda">
           <h2>Hakkimda</h2>
 
