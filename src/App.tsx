@@ -4,11 +4,10 @@ import profileFoto from "./assets/profile.jpeg";
 function App() {
   return (
     <>
-      <a href="#main-content" className="skip-link">
-        Ana içeriğe geç
-      </a>
-
       <header>
+        <a href="#main-content" className="skip-link">
+          Ana içeriğe geç
+        </a>
         <h1>Engin Saçan Kişisel Portfolyo Sitesi</h1>
         <nav aria-label="Ana navigasyon">
           <ul>
@@ -33,17 +32,65 @@ function App() {
             <img src={profileFoto} alt="Engin Saçan'ın profil resmi" />
             <figcaption>Engin Saçan</figcaption>
           </figure>
+
+          <p>
+            Merhaba! Ben Engin Saçan, Fırat Üniversitesi'nde 3.sınıf bir yazılım
+            mühendisi öğrencisiyim.
+          </p>
+
+          <h3>Kullandığım Teknolojiler</h3>
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Vite</li>
+          </ul>
         </section>
 
         <section id="projeler">
           <h2>Projelerim</h2>
-          <figure>
-            <img
-              src="/ototechstil.png"
-              alt="Ototechstil Projesi Dashboard Ekranı"
-            />
-            <figcaption>Ototechstil Projesi</figcaption>
-          </figure>
+
+          <article>
+            <h3>Ototechstil</h3>
+            <figure>
+              <img
+                src="/ototechstil.png"
+                alt="Ototechstil projesi dashboard ekranı"
+              />
+              <figcaption>Uygulama Kontrol Paneli</figcaption>
+            </figure>
+
+            <p>Yapay Zeka Kalite Kontrolü ile Akıllı Tekstil Otomasyonu</p>
+
+            <h3>Kullandığım Teknolojiler</h3>
+            <ul>
+              <li>.NET</li>
+              <li>SQLite</li>
+              <li>Entity Framework Core</li>
+              <li>ML.NET</li>
+              <li>DevExpress WinForms</li>
+            </ul>
+          </article>
+
+          <article>
+            <h3>Voulance</h3>
+            <figure>
+              <img src="/voulance.png" alt="Voulance projesi ana sayfa" />
+              <figcaption>Voulance Ana Sayfa</figcaption>
+            </figure>
+
+            <p>
+              Stellar blockchain tabanlı, güvenli ve şeffaf freelance ödeme
+              dApp'i.
+            </p>
+
+            <h3>Kullandığım Teknolojiler</h3>
+            <ul>
+              <li>Next.js</li>
+              <li>Stellar SDK</li>
+              <li>Tailwind CSS</li>
+              <li>Supabase</li>
+            </ul>
+          </article>
         </section>
 
         <section id="iletisim">
